@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="605.0" prefWidth="771.0" style="-fx-background-color: #E6E6FA;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="apm.FXMLHomeController">
+   <children>
+      <TableView fx:id="tableView" prefHeight="605.0" prefWidth="598.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="173.0" AnchorPane.topAnchor="0.0">
+        <columns>
+          <TableColumn fx:id="id" prefWidth="45.0" text="ID" />
+          <TableColumn fx:id="username" prefWidth="73.0" text="Username" />
+            <TableColumn fx:id="works" prefWidth="224.0" text="Diagnosis" />
+            <TableColumn fx:id="place" prefWidth="103.0" text="Blood Group" />
+            <TableColumn fx:id="date" prefWidth="74.0" text="Age" />
+            <TableColumn fx:id="time" prefWidth="90.0" text="BMI" />
+        </columns>
+      </TableView>
+      <Button fx:id="deleteworks" layoutX="623.0" layoutY="277.0" mnemonicParsing="false" onAction="#deleteworksAction" prefHeight="44.0" prefWidth="117.0" text="Delete" />
+      <Button fx:id="editworks" layoutX="623.0" layoutY="184.0" mnemonicParsing="false" onAction="#editworksAction" prefHeight="44.0" prefWidth="117.0" text="Edit" />
+      <Button fx:id="addworks" layoutX="627.0" layoutY="76.0" mnemonicParsing="false" onAction="#addworksAction" prefHeight="44.0" prefWidth="117.0" text="Add more Info" />
+      <Button fx:id="addUser" layoutX="618.0" layoutY="368.0" mnemonicParsing="false" onAction="#addUserAction" prefHeight="51.0" prefWidth="128.0" text="Add New Patient" />
+      <Button fx:id="logout" layoutX="615.0" layoutY="494.0" mnemonicParsing="false" onAction="#logoutAction" prefHeight="44.0" prefWidth="135.0" text="Logout" />
+   </children>
+</AnchorPane>
